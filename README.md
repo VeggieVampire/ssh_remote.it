@@ -25,6 +25,5 @@ So with the active(green) device get the DeviceAddress should look like an odd M
 command:
 ./connection_setup.sh "00:00...:00"
 
-Lastly you can connection to your device.
-command:
-./connect.sh
+if all went well you should see how to connect to your device at the very end of the script. Copy the SSH command and run it.
+
