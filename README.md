@@ -6,6 +6,7 @@ easy way from a Linux console to setup a remote.it proxy connection.
 First step is to add your username and password to a config file
 command:
 echo 'USERNAME="yourname@something"'>config
+
 echo 'PASSWORD="yourpassword"'>config
 
 You also want to get your unique Developer API Key from the https://app.remote.it/#account
