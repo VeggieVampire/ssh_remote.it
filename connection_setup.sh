@@ -48,6 +48,15 @@ curl -X POST \
                                       https://api.remot3.it/apv/v27/device/connect>output.log
 
 jsonlint-py -f output.log>current_remote_address
-
 cat current_remote_address
+
 rm -rf output.log
+echo ""
+echo ""
+echo ""
+proxyserver=$(cat current_remote_address|grep proxyserver|awk -F '"' '{print $4}')
+proxyport=$(cat current_remote_address|grep proxyport|awk -F '"' '{print $4}')
+
+printf "ssh $proxyserver -p $proxyport\n"
+
+
