@@ -11,6 +11,12 @@ cd ssh_remote.it
 
 chmod 777 *
 
+cd lib
+
+chmod 777 *
+
+cd ..
+
 # Setup
 
 First step is to add your username and password to a config file
