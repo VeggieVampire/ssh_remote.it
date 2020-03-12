@@ -1,6 +1,13 @@
 # ssh_remote.it
 easy way from a Linux console to setup a remote.it proxy connection.
 
+# Install
+
+sudo apt-get install -y git
+git clone https://github.com/VeggieVampire/ssh_remote.it
+cd ssh_remote.it
+chmod 777 *
+
 # Setup
 
 First step is to add your username and password to a config file
