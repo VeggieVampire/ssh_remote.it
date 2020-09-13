@@ -21,6 +21,7 @@ cd ..
 
 First step is to add your username and password to a config file
 command:
+cd ssh_remote.it
 
 echo 'USERNAME="yourname@something"'>config
 
