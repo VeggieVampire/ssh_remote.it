@@ -7,6 +7,18 @@ GREEN='\033[0;32m'      #GREEN
 YELLOW='\033[0;33m'     #YELLOW
 NC='\033[0m'            #No Color
 
+FILE="./config"
+if [ -f "$FILE" ]; then
+    printf "${GREEN}$FILE exists.${NC}\n"
+else 
+    printf "${RED}missing config file ${NC}\n"
+    echo "$FILE does not exist!!"
+    echo "Place the config file in the directoy you are running a authentication.sh from"
+    exit 1
+    break
+    exit 1
+fi
+
 DEVKEY=$(cat config|grep DEVKEY|awk -F '"' '{print $2}')
 USERNAME=$(cat config|grep USERNAME|awk -F '"' '{print $2}')
 PASSWORD=$(cat config|grep PASSWORD|awk -F '"' '{print $2}')
